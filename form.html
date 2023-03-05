@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--sweet alert-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.32/sweetalert2.min.css" integrity="sha512-doewDSLNwoD1ZCdA1D1LXbbdNlI4uZv7vICMrzxfshHmzzyFNhajLEgH/uigrbOi8ETIftUGBkyLnbyDOU5rpA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.32/sweetalert2.css" integrity="sha512-e+TwvhjDvKqpzQLJ7zmtqqz+5jF9uIOa+5s1cishBRfmapg7mqcEzEl44ufb04BXOsEbccjHK9V0IVukORmO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="text-center">
+
+    <div class="Form  ">
+      <nav class="navbar navbar-expand-lg  fixed-top row">
+        <div class="container">
+          <div class="col-md-9">
+          <a class="navbar-brand fs-4" href="index.html">مستوصف الرحمة</a>
+          </div>
+          <div class="col-md-3">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <span></span>
+            <span></span>
+            <span></span>
+            
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="index.html #clinics">العيادات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doctor.html">الأطباء</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="reviews.html">استفسارات</a>
+              </li>
+              
+            </ul>
+          </div>
+          </div>
+        </div>
+      </nav>
+   <div class="overlay">
+    <h3 class="text-light fs-1 mb-5 pt-5">حجز موعد</h3>
+    <p class="text-light fs-5 ">سنرسل لك تأكيدا خلال 24 ساعة.</p>
+    <p class="text-light"><span class="text-light fs-4">حالة طوارئ؟</span> اتصل 1-2554-2356-33</p>
+
+    <form >
+    <input type="text" placeholder="الاسم *" class="mb-3 form-input border border-primary"  id="name">
+    <select class="form-input border border-primary text-secondary"  aria-label="Default select example" id="clinck">
+      <option selected>اختر العيادة*</option>
+      <option value="1">عيادة العظام</option>
+      <option value="2">عيادة القلب</option>
+      <option value="3">عيادة الأسنان</option>
+      <option value="4">عيادةالباطني</option>
+      <option value="5">عيادة أنف وأذن وحنجرة</option>
+      <option value="6">عيادة النسائية</option>
+      <option value="7">عيادة المسالك البولية</option>
+      <option value="8">قسم التصوير التلفزيوني</option>
+      <option value="9">عيادة الأطفال</option>
+      <option value="10">عيادة جراحة الأعصاب</option>
+      <option value="11">عيادة جراحة الأطفال</option>
+      <option value="12">قسم المختبر</option>
+    </select><br>
+    <input type="tel" placeholder="الهاتف *" class="form-input border border-primary"  id="phone">
+    <input type="email" placeholder="البريد الإلكتروني " class="form-input mb-3  border border-primary" id="email"><br>
+    <input type="date" placeholder="التاريخ *" class="form-input mb-3 border border-primary"  id="date">
+    <input type="time" placeholder="الوقت*" class="form-input mb-3 border border-primary"  id="time"><br>
+    <textarea placeholder="رسالة*" rows="9" class="form-input border border-primary"  id="mes"></textarea><br>
+    <button type="button" class=" btn bg-primary text-light " id="click" >ارسل الان</button>
+
+    </form>
+
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+<!--import Jquery-->
+<script src="js/Jquery.js"></script>
+<!--import main.js-->
+<script src="js/main.js"></script>
+
+    <!-- bootstrap 5 -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!--sweet alert-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.32/sweetalert2.all.js" integrity="sha512-B0MJ3TjE/KvcgLKxl0VI2cSSJ8fyBXX15SsnncxvTiE/8NdeJCghYEWJNGMRi4kNMgtS77WgyJ4tosHIbN2Iug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.32/sweetalert2.all.min.js" integrity="sha512-Urg8l2V5SUjMkg0IhnAJw1G0viVOVqOxsoa8jkkq5n7JA55bGWAYJME3Lap1q0SEWvtot2pOgoprTOib4jtpuw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.32/sweetalert2.min.js" integrity="sha512-yc+tEbvC4kiy3J6e0aZogFVr8AZhMtJTof2z+fGPaJgjehpIPzguZxfRRTiQcXlSHbJsB3Bborvv++81TMLZ2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>

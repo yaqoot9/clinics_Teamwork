@@ -1,0 +1,450 @@
+
+body{
+    direction: rtl;
+
+}
+
+/*صفحة المواعيد*/
+.header-appointment{
+    height: 1000px;
+    background-image: url("../img/appointment.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.header-appointment .opcity{
+    background-color:  rgba(1, 55, 109, 0.438);
+    height: 1000px;
+
+}
+.header-appointment h2 {
+    text-align: center;
+    padding: 5%;
+    color: white;
+
+}
+.header-appointment .table{
+    background-color: rgba(255, 255, 255, 0.641);
+    width: 70%;
+    margin-right: 15%;
+}
+.header-appointment .table tr {
+    margin-top: 1000px;
+
+}
+.header-appointment .button{
+    margin-right: 35%;
+    margin-top: 50px;
+}
+
+
+
+/*صفخة التسجيل*/
+.Form{
+    background-image: url("../img/Form.jpg");
+    height: 100vh;
+background-size: cover;
+padding-top: 200px;
+
+
+}
+
+.form-input{width: 270px;
+height: 70px;}
+.Form .overlay{
+    position: absolute;
+   top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color:  rgba(0, 128, 255, 0.2);;
+}
+
+/*صفحة الاراء*/
+.reviews{
+    height: 100vh;
+    background-image: url("../img/review.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.reviews-form{
+    width: 70%;
+    margin-right: 20%;
+}
+.reviews h2{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+    color: white;
+
+}
+.reviews button{
+    margin-right: 35%;
+    padding: 2% 9%;
+    margin-top: 30px;
+    font-size: 1.2rem;
+   
+}
+.reviews .opcity{
+    background-color:  rgba(1, 55, 109, 0.438);
+    height: 100vh;
+
+}
+.reviews .name ,.reviews .mobile{
+    width: 45%;
+    display: inline-block;
+    height: 60px;
+}
+
+/*doctor page*/
+.header-doctor{
+    background-image: url(../img/do-header.jpg);
+    background-size: cover;
+}
+.header-doctor .navbar{
+    background-color: #0080ff;
+}
+.header-con h1{
+font-size: 55px;
+color: rgb(27, 32, 33);
+font-weight: 600;
+text-align: left;
+}
+.header-con p{
+    font-size: 16px;
+    color: rgb(27, 32, 33);
+    font-weight: 400;
+    height: 52px;
+    width: 570px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.header-con span{
+    padding:  17px;
+    background-color: #0080ff;
+    text-decoration: none;
+    color: white;
+    margin-right: 424px;
+} 
+
+.card-img-top{
+    width: 262px;
+    height: 358px;
+}
+
+.Doctors-se{
+  margin-right: 11rem;  
+}
+.img-fluid{
+    width: 277.5px;
+    height: 290.484px;
+}
+.card-body{
+    background-color: #0080ff;
+    height: 255px;
+    width: 277.5px;
+    text-align: left;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+.card-body h2{
+    font-size: 18px;
+    color: #222222;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-body h3{
+    font-size: 14px;
+    color: #cce5ff;
+    font-weight: bold;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-body p{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+.card-body a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 5px;
+    color: #cce5ff;
+
+}
+.card-body i{
+    color: #cce5ff;
+}
+.card-body ul{
+    list-style: none;
+    text-align: right;
+    margin-right: -30px
+}
+
+
+.slide{
+    position: absolute;
+    top: 816px;
+    left: 0;
+    right: 0;
+    bottom: -614px;
+    background-color: rgba(0, 0, 0, .4);
+    display: none;
+    animation: animateSlider 2s;
+    transition: 1s ease-in-out;
+}
+
+@keyframes animateSlider {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.slide .slide-item{
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animateSliderContent 3s  ;
+}
+.slide img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+@keyframes animateSliderContent {
+    from{
+        transform: translate(-50%, -50%) scale(0);
+    }
+    to{
+        transform:  translate(-50%, -50%) scale(1);
+    }
+}
+.prev{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 9;
+    color: #FFF;
+}
+.next{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 9;
+    color: #FFF;
+}
+
+.number{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    z-index: 9;
+    background-color: #FFF;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.active{
+    display: block;
+}
+
+.close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #FFF;
+    cursor: pointer;
+}
+/*end page*/
+
+/* الصفحة الرئيسية*/
+
+/*public*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap');
+
+
+
+
+
+.navbar-brand {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+   
+   
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    
+    
+
+}
+
+.navbar-toggler span {
+    background-color: white;
+    border: 1px solid white;
+    width: 1.5rem;
+    display: flex;
+    margin: 0.3rem auto;
+  }
+  .navbar-toggler span:nth-child(3) {
+    width: 1rem;
+  }
+
+.header{
+    background-image: url(../img/Medical-Transcription.webp);
+    background-size: cover;
+    background-position:center;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,.7);
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+ }
+
+.header-title{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+}
+.header-icons a{
+    color: rgb(16, 134, 218);
+}
+.header-icons {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    left: 1.5rem;
+}
+.w-20{
+   width: 15%;
+}
+.titleP{
+    font-size: 22px;
+    font-family: "Alegreya Sans";
+    margin-bottom: 20px;
+    color: rgba(255,255,255, .92);
+    text-align: center;
+}
+/* start about dy razan */
+  
+.about {
+    padding-top: 6rem;
+    margin-bottom: 6rem;
+    direction: rtl;
+  }
+
+  .title h2{
+
+    color: black;
+    font-size: 2.5rem;
+  }
+  
+  .about p{
+    color: #222222;
+
+    font-size: 1.2rem;
+  }
+/* end about dy razan */
+
+/* start btnTop,btnDown dy razan */
+.btnTop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    background-color: #222222;
+    color: #fff;
+    left: 0;
+    bottom:30px;
+    right: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+}
+/* end btnTop,btnDown dy razan */
+.clinics{
+    background-color: #d0e6fb;
+    padding-top: 70px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.clinics h2{
+    font-size: 3rem;
+}
+.clinics .clinics-content .clinic{
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 5%;
+    line-height: 50px;
+    margin-left: 20px;
+    width: 22%;
+    margin-top: 17px;
+
+}
+
+/*تحميل الصفحة*/
+.loader{
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #f1f1f1;
+z-index: 9999999;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.spinner{
+width: 100px;
+height: 100px;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+border: 10px solid blue;
+border-top:10px solid gray ;
+border-radius: 50%;
+animation: spin 2s infinite linear;
+
+}
+
+@keyframes spin{
+
+    from{transform: rotate(0deg); }
+
+to{
+    transform: rotate(360deg) ;
+}
+}
+
+
